@@ -1,44 +1,39 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Create Dev Space in SAP Business Application Studio
 
-In this exercise, we will create...
+In this exercise, we will create a development space in SAP Business Application Studio.
 
-## Exercise 1.1 Sub Exercise 1 Description
+1. Navigate to your subaccount and choose **Services** &rarr; **Instances and Subscriptions**.
 
-After completing these steps you will have created...
+2. Choose the **SAP Business Application Studio** subscription. SAP Business Application Studio opens in a new tab of the browser.
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+3. Choose **Create Dev Space**.
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+    If you haven't created a dev space, the welcome page for SAP Business Application Studio loads.
 
+    ![SAP Business Application Studio welcome](./images/BAS_Welcome.png)
 
+    If this isn't the first dev space, the dev space manager for SAP Business Application Studio loads.
 
-## Exercise 1.2 Sub Exercise 2 Description
+    ![SAP Business Application Studio welcome](./images/BAS_Welcome_1.png)
 
-After completing these steps you will have...
+    > If you create a bookmark to this page, it's easy to get back to SAP Business Application Studio later.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+4. Enter a **Dev Space Name** (For example, **IncidentManagement**).
 
-```
+5. Choose the **Full Stack Cloud Application** template and then choose **Create Dev Space**.
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+    ![SAP Business Application Studio Create Dev Space](./images/BAS_Create_DevSpace.png)
+
+    > Creating your dev space might take some minutes.
+
+6. As soon as your dev space is in status **Running**, you can click its name to open it.
+
+    ![SAP Business Application Studio Create Dev Space](./images/BAS_Open_DevSpace.png)
 
 
 ## Summary
 
-You've now ...
+You've now created a development space in SAP Business Application Studio.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Build a CAP application](../ex2/README.md)
 
