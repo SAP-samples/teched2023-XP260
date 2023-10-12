@@ -47,6 +47,7 @@ To deploy the Incident Management applications, you need the following entitleme
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+
     - [Introduction to Application Development Using CAP](./exercises/ex0/README.md)
     - [Launch SAP Business Application Studio](./exercises/ex1/README.md)
     - [Build a CAP Application](./exercises/ex2/README.md)
