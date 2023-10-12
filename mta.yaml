@@ -1,0 +1,149 @@
+_schema-version: "3.1"
+ID: incident-management-046
+description: A simple CAP project.
+version: 1.0.0
+modules:
+- name: incident-management-046-srv
+  type: nodejs
+  path: gen/srv
+  requires:
+  - name: incident-management-046-auth
+  - name: incident-management-046-db
+  - name: incident-management-046-destination-service
+  provides:
+  - name: srv-api
+    properties:
+      srv-url: ${default-url}
+  parameters:
+    buildpack: nodejs_buildpack
+  build-parameters:
+    builder: npm
+- name: incident-management-046-db-deployer
+  type: hdb
+  path: gen/db
+  requires:
+  - name: incident-management-046-db
+  parameters:
+    buildpack: nodejs_buildpack
+- name: incident-management-046-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: incident-management-046-destination-service
+    parameters:
+      content-target: true
+  - name: incident-management-046_html_repo_host
+    parameters:
+      service-key:
+        name: incident-management-046_html_repo_host-key
+  - name: incident-management-046-auth
+    parameters:
+      service-key:
+        name: incident-management-046-auth-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: incidents_046_incident_management_046_html_repo_host
+          ServiceInstanceName: incident-management-046-html5-app-host-service
+          ServiceKeyName: incident-management-046_html_repo_host-key
+          sap.cloud.service: incidents046
+        - Authentication: OAuth2UserTokenExchange
+          Name: incidents_046_incident_management_046_auth
+          ServiceInstanceName: incident-management-046-auth
+          ServiceKeyName: incident-management-046-auth-key
+          sap.cloud.service: incidents046
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: incident-management-046-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: incident-management-046_html_repo_host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - ns046incidents046.zip
+      name: ns046incidents046
+      target-path: resources/
+- name: ns046incidents046
+  type: html5
+  path: app/incidents-046
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+# - name: incidents-api-access-046
+#   type: org.cloudfoundry.managed-service  
+#   parameters:
+#     path: ./bupa.json
+#     service: s4-hana-cloud
+#     service-plan: api-access
+#     system-name: teched-grs
+- name: incidents-destination
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: destination
+    service-plan: lite
+- name: incident-management-046-auth
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      tenant-mode: dedicated
+      xsappname: incident-management-046-${org}-${space}
+    path: ./xs-security.json
+    service: xsuaa
+    service-plan: application
+- name: incident-management-046-db
+  type: com.sap.xs.hdi-container
+  parameters:
+    service: hana
+    service-plan: hdi-shared
+- name: incident-management-046-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          - Authentication: NoAuthentication
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
+            Name: incident-management-046-srv-api
+            ProxyType: Internet
+            Type: HTTP
+            URL: ~{srv-api/srv-url}
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: incident-management-046-destination-service
+    service-plan: lite
+  requires:
+  - name: srv-api
+- name: incident-management-046_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: incident-management-046-html5-app-host-service
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npx -p @sap/cds-dk cds build --production

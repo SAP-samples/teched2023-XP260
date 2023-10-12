@@ -1,0 +1,1 @@
+sap.ui.define(["sap/fe/core/AppComponent"],function(n){"use strict";return n.extend("ns046.incidents046.Component",{metadata:{manifest:"json"}})});

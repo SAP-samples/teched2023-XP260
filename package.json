@@ -1,0 +1,83 @@
+{
+  "name": "incident-management-046",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^3.6.0",
+    "@sap-cloud-sdk/http-client": "^3.6.0",
+    "@sap-cloud-sdk/resilience": "^3.6.0",
+    "@sap-cloud-sdk/util": "^3.6.0",
+    "@sap/hdi-deploy": "4.8.0",
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "1.2.1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.108.15",
+    "axios": "^1.5.1",
+    "chai": "^4.3.10",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0",
+    "jest": "^29.7.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "test": "jest tests/test.js",
+    "start": "cds-serve",
+    "watch-incidents-046": "cds watch --open incidents-046/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy incident-management-046 --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+  },
+  "sapux": [
+    "app/incidents-046"
+  ],
+  "cds": {
+    "requires": {
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "incident.support@tester.sap.com": {
+              "password": "initial",
+              "roles": [
+                "support"
+              ]
+            },
+            "alice": {
+              "roles": [
+                "support"
+              ]
+            },
+            "bob": {
+              "roles": [
+                "support"
+              ]
+            }
+          }
+        }
+      },
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
+      },
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_BUSINESS_PARTNER",
+        "[production]": {
+          "credentials": {
+            "destination": "incidents-api-access-046",
+            "path": "/sap/opu/odata/sap/API_BUSINESS_PARTNER"
+          }
+        }
+      }
+    }
+  }
+}

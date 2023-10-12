@@ -1,0 +1,42 @@
+{
+	"name": "random-int",
+	"version": "2.0.1",
+	"description": "Generate a random integer",
+	"license": "MIT",
+	"repository": "sindresorhus/random-int",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"rand",
+		"random",
+		"randomize",
+		"int",
+		"integer",
+		"number",
+		"max",
+		"min",
+		"math",
+		"generate",
+		"generator"
+	],
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"in-range": "^2.0.0",
+		"stable-fn": "^2.0.0",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
+}

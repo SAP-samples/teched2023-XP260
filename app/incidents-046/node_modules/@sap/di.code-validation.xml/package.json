@@ -1,0 +1,37 @@
+{
+  "name": "@sap/di.code-validation.xml",
+  "version": "1.1.29",
+  "main": "src/xmlValidator.js",
+  "scripts": {
+    "test": "nyc mocha './test/**/*Spec.js'"
+  },
+  "dependencies": {
+    "@sap/di.code-validation.core": "1.0.17",
+    "@xmldom/xmldom": "0.8.4",
+    "amdefine": "1.0.1",
+    "fontoxpath": "3.21.0",
+    "sax": "1.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-string": "^1.5.0",
+    "eslint": "^8.2.0",
+    "grunt": "^1.5.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-istanbul-coverage": "^0.1.4",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "grunt-mocha-test": "^0.13.3",
+    "gruntify-eslint": "^5.0.0",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2",
+    "nyc": "^15.1.0",
+    "optionator": "^0.9.1",
+    "rewire": "^5.0.0",
+    "sinon": "^12.0.1"
+  },
+  "config": {},
+  "engines": {
+    "npm": ">=5.7.1"
+  }
+}
