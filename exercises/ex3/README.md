@@ -270,6 +270,10 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 7. Navigate to **Sections** &rarr; **General Information** &rarr; **Form** &rarr; **Fields** and delete the **urgency_code** and **status_code** fields.
 
+8. Navigate to **Sections**, drag the **General Information** and drop it in the **Overview** &rarr; **Subsections** node.
+
+
+
 10. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections** &rarr; **Details** &rarr; **Form** &rarr; **Fields**, choose the **Plus** icon to add more fields, and then choose **Add Basic Fields**.
 
     ![Add Basic Fields](./images/obj6.png)
