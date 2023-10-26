@@ -272,7 +272,7 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 8. Navigate to **Sections**, drag the **General Information** and drop it in the **Overview** &rarr; **Subsections** node.
 
-
+    ![Add Basic Fields](./images/obj3.png)
 
 10. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections** &rarr; **Details** &rarr; **Form** &rarr; **Fields**, choose the **Plus** icon to add more fields, and then choose **Add Basic Fields**.
 
