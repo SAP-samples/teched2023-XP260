@@ -20,7 +20,6 @@ In the current implementation, you can open the **Incident Management** applicat
 3. Copy the following content to the **launchpage.html** file:
 > Find all `<xxx>` and replace all with your teched user number
 
-    ```html
     <!DOCTYPE html>
     <html>
         <head>
@@ -59,7 +58,6 @@ In the current implementation, you can open the **Incident Management** applicat
         </head>
         <body class="sapUiBody" id="content"></body>
     </html>
-    ```
 
 3. Make sure the SAP Fiori application is running. If you closed it, choose the **Preview Application** option in the **Application Info - incidentsxxx** tab and select the **watch-incidents** npm script.
 

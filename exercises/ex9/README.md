@@ -99,6 +99,7 @@ module:
           sap.cloud.service: incidents-046
         - Authentication: OAuth2UserTokenExchange
           Name: incidents_046_incident_management_046_auth
+          ServiceInstanceName: incident-management-046-auth
           ServiceKeyName: incident-management-046-auth-key
           sap.cloud.service: incidents-046
         existing_destinations_policy: ignore
@@ -133,6 +134,7 @@ build-parameters:
 
 - This snippet adds the destinations required by the SAP Build Work Zone service: HTML5 repo host service and xsuaa service
 - The `html5-apps-repo` service with plan `app-host` is required to deploy the HTML5 applications to the HTML5 Application Repository.
+- Add `ServiceInstanceName: incident-management-046-auth` under `Authentication: OAuth2UserTokenExchange` 
 
 
 ## Add navigation target for Incidents UI
