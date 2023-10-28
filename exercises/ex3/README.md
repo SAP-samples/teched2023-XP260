@@ -145,19 +145,19 @@ In this section, you'll modify the List View Page of the UI with the SAP Fiori p
 
 The filter labels are text strings. It's a good idea to update them so they are compliant with internationalization standards (i18n).
 
-5. Change the **urgency_code** filter label. In the **Label** field, change the value to **Urgency**. Press <kbd>Enter</kbd> to confirm the change.
+1. Change the **urgency_code** filter label. In the **Label** field, change the value to **Urgency**. Press <kbd>Enter</kbd> to confirm the change.
 
-6. Choose the **Globe** icon to generate a translatable text key and choose **Apply**.
+2. Choose the **Globe** icon to generate a translatable text key and choose **Apply**.
 
     ![Generate Translatable Text Key](./images/ls10.png)
 
-7. Choose the **status_code** filter. In the **Label** field, change the value to **Status**. Press <kbd>Enter</kbd> to confirm the change.
+3. Choose the **status_code** filter. In the **Label** field, change the value to **Status**. Press <kbd>Enter</kbd> to confirm the change.
 
-8. Choose the **Globe** icon to generate a translatable text key and choose **Apply**.
+4. Choose the **Globe** icon to generate a translatable text key and choose **Apply**.
 
-9. For both the **Urgency** and **Status** filters, in the **Display Type** dropdown menu, select **Value Help**. A popup shows up. 
+5. For both the **Urgency** and **Status** filters, in the **Display Type** dropdown menu, select **Value Help**. A popup shows up. 
 
-10. In the **Define Value Help Properties for Urgency/Status** popup: 
+6. In the **Define Value Help Properties for Urgency/Status** popup: 
 
     - Choose the dropdown menu in the **Value Description Property** field.
     - Select **descr**.
@@ -165,27 +165,27 @@ The filter labels are text strings. It's a good idea to update them so they are 
 
 #### Edit columns
 
-10. Expand the **Columns** section under **Table** and delete the columns **urgency_code** and **status_code**. 
+1. Expand the **Columns** section under **Table** and delete the columns **urgency_code** and **status_code**. 
 
-11. In **Table** &rarr; **Columns**, choose the **Plus** icon to add columns. Choose **Add Basic Columns**.
+2. In **Table** &rarr; **Columns**, choose the **Plus** icon to add columns. Choose **Add Basic Columns**.
 
     ![Add Basic Columns](./images/ls6.png)
 
-12. In the **Add Basic Columns** popup, choose the dropdown menu in the **Columns** field and:
+3. In the **Add Basic Columns** popup, choose the dropdown menu in the **Columns** field and:
 
     - Select the **status** &rarr; **descr** checkbox.
     - Select the **urgency** &rarr; **descr** checkbox.
     - Select the **customer** &rarr; **name** checkbox and add the columns.
 
-14. Select the **name** column and choose **^** to move the column up just under the **Title** column.
+4. Select the **name** column and choose **^** to move the column up just under the **Title** column.
 
-15. Choose the **title** column, choose the **Globe** icon in the **Label** field to generate a translatable text key, and apply the changes.    
+5. Choose the **title** column, choose the **Globe** icon in the **Label** field to generate a translatable text key, and apply the changes.    
 
     > The filter labels are text strings. It's a good idea to update them so they are compliant with internationalization standards (i18n).
 
     > Learn more about how internationalization works for the backend part in [Where to Place Text Bundles?](https://cap.cloud.sap/cap/docs/guides/i18n#where-to-place-text-bundles) in the CAP documentation.
 
-5. For each of the **name**, **Description (urgency/descr)**, and **Description (status/descr)** columns:
+6. For each of the **name**, **Description (urgency/descr)**, and **Description (status/descr)** columns:
 
     - In the **Label** field, change the value to **Customer**, **Urgency**, and **Status**, respectively.
     - Press <kbd>Enter</kbd> to confirm the change.
@@ -194,23 +194,23 @@ The filter labels are text strings. It's a good idea to update them so they are 
 
 #### Configure tables
 
-17. Choose **Table** and in the **Initial Load** dropdown menu, select **Enabled** to load the data automatically.
+1. Choose **Table** and in the **Initial Load** dropdown menu, select **Enabled** to load the data automatically.
 
     ![Enable Data Auto Load](./images/ls8.png)
 
-18. In the **Type** dropdown menu, select **ResponsiveTable** to make the table responsive.
+2. In the **Type** dropdown menu, select **ResponsiveTable** to make the table responsive.
   
-19. Navigate to **Table** &rarr; **Columns** &rarr; **Status** and in the **Criticality** dropdown menu, select **status/criticality**.
+3. Navigate to **Table** &rarr; **Columns** &rarr; **Status** and in the **Criticality** dropdown menu, select **status/criticality**.
 
     ![Add Status Criticality](./images/criticality.png)
 
 #### Check the result
 
-20. The list page of the Incident Management application should look like this:
+1. The list page of the Incident Management application should look like this:
 
     ![Incident Management App's List Page](./images/IncidentsUI.png)
 
-21. Navigate back to the page editor and choose **Page Map** in the top left. This takes you back to the overview of the **Incident-Management** application.
+2. Navigate back to the page editor and choose **Page Map** in the top left. This takes you back to the overview of the **Incident-Management** application.
 
 ### Configure the Incident Object Page
 
@@ -244,9 +244,9 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 #### Add Overview section
 
-8. Choose **Sections** and then choose the **Plus** icon to add more sections. Choose **Add Group Section**. 
+1. Choose **Sections** and then choose the **Plus** icon to add more sections. Choose **Add Group Section**. 
 
-9. In the **Add Group Section** popup:
+2. In the **Add Group Section** popup:
 
     - Enter **Overview** in the **Label** field.
     - Choose the **Globe** icon to generate a translatable text key. 
@@ -256,11 +256,11 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 #### Add Details subsection
 
-9. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections**.
+1. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections**.
 
-10. Choose the **Plus** icon to add more sections and choose **Add Form Section**.
+2. Choose the **Plus** icon to add more sections and choose **Add Form Section**.
 
-10. In the **Add Form Section** popup:
+3. In the **Add Form Section** popup:
 
     - Enter **Details** in the **Label** field.
     - Choose the **Globe** icon to generate a translatable text key. 
@@ -268,44 +268,26 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 #### Configure fields
 
-7. Navigate to **Sections** &rarr; **General Information** &rarr; **Form** &rarr; **Fields** and delete the **urgency_code** and **status_code** fields.
+1. Navigate to **Sections** &rarr; **General Information** &rarr; **Form** &rarr; **Fields** and delete the **urgency_code** and **status_code** fields.
 
-10. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections** &rarr; **Details** &rarr; **Form** &rarr; **Fields**, choose the **Plus** icon to add more fields, and then choose **Add Basic Fields**.
+2. Navigate to **Sections** &rarr; **General Information** &rarr; **Form** &rarr; **Fields** and choose the **Plus** icon to add more fields, and then choose **Add Basic Fields**.
 
-    ![Add Basic Fields](./images/obj6.png)
+    ![Add Basic Fields](./images/obj4.png)
 
-11. In the **Add Basic Fields** popup
+3. In the **Add Basic Fields** popup
 
-    - From the dropdown menu in the **Fields** field, select **status_code**, **urgency_code**, and **customer_ID**. 
+    - From the dropdown menu in the **Fields** field, select **customer_ID**. 
     - Choose **Add**.
 
-5. For each of the **customer_ID**, **urgency_code**, and **status_code** fields:
+4. For **customer_ID**:
 
-    - In the **Label** field, change the value to **Customer**, **Urgency**, and **Status**, respectively.
+    - In the **Label** field, change the value to **Customer**.
     - Press <kbd>Enter</kbd> to confirm the change.
     - Choose the **Globe** icon in the **Label** field to generate a translatable text key.
 
-14. For the **Status** field, select **status/descr** in the **Text** dropdown menu and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
+5. For the **Customer** field, select **customer/name** in the **Text** dropdown menu and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
 
-13. In the **Define Value Help Properties for Status** popup:
-
-    - Select **Status** in the **Value Source Entity** dropdown menu.
-    - Select **code** in the **Value Source Property** dropdown menu.
-    - Select **descr** in the **Value Description Property** dropdown menu.
-    - Leave the default values for the rest of the properties and choose **Apply**.
-
-16. For the **Urgency** field, select **urgency/descr** in the **Text** dropdown menu and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
-
-16. In the **Define Value Help Properties for Urgency** popup:
-
-    - Select **Urgency** in the **Value Source Entity** dropdown menu.
-    - Select **code** in the **Value Source Property** dropdown menu.
-    - Select **descr** in the **Value Description Property** dropdown menu.
-    - Leave the rest of the properties with the default values and choose **Apply**.
-
-17. For the **Customer** field, select **customer/name** in the **Text** dropdown menu, select **Text Only** in the **Text Arrangement** dropdown menu, and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
-
-19. In the **Define Value Help Properties for Customer** popup:
+6. In the **Define Value Help Properties for Customer** popup:
 
     - Select **Customers** in the **Value Source Entity** dropdown menu.
     - Select **ID** in the **Value Source Property** dropdown menu.
@@ -315,13 +297,50 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
     - In the **Result List** section, add the columns **name** and **email** by choosing **Add Column**.
     - Choose **Apply**.
 
+7. Navigate to **Sections**, drag the **General Information** and drop it in the **Overview** &rarr; **Subsections** node.
+
+    ![Add Basic Fields](./images/obj3.png)
+
+8. Navigate to **Sections** &rarr; **Overview** &rarr; **Subsections** &rarr; **Details** &rarr; **Form** &rarr; **Fields**, choose the **Plus** icon to add more fields, and then choose **Add Basic Fields**.
+
+    ![Add Basic Fields](./images/obj6.png)
+
+9. In the **Add Basic Fields** popup
+
+    - From the dropdown menu in the **Fields** field, select **status_code**, **urgency_code**. 
+    - Choose **Add**.
+
+10. For each of the **urgency_code**, and **status_code** fields:
+
+    - In the **Label** field, change the value to **Urgency**, and **Status**, respectively.
+    - Press <kbd>Enter</kbd> to confirm the change.
+    - Choose the **Globe** icon in the **Label** field to generate a translatable text key.
+
+11. For the **Status** field, select **status/descr** in the **Text** dropdown menu and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
+
+12. In the **Define Value Help Properties for Status** popup:
+
+    - Select **Status** in the **Value Source Entity** dropdown menu.
+    - Select **code** in the **Value Source Property** dropdown menu.
+    - Select **descr** in the **Value Description Property** dropdown menu.
+    - Leave the default values for the rest of the properties and choose **Apply**.
+
+13. For the **Urgency** field, select **urgency/descr** in the **Text** dropdown menu and then select **Value Help** in the **Display Type** dropdown menu. A popup opens.
+
+14. In the **Define Value Help Properties for Urgency** popup:
+
+    - Select **Urgency** in the **Value Source Entity** dropdown menu.
+    - Select **code** in the **Value Source Property** dropdown menu.
+    - Select **descr** in the **Value Description Property** dropdown menu.
+    - Leave the rest of the properties with the default values and choose **Apply**.
+
 #### Add Conversations section
 
-19. Navigate to **Sections** and then choose the **Plus** icon to add more sections. 
+1. Navigate to **Sections** and then choose the **Plus** icon to add more sections. 
 
-20. Choose **Add Table Section**. A popup appears.
+2. Choose **Add Table Section**. A popup appears.
 
-20. In the **Add Table Section** popup:
+3. In the **Add Table Section** popup:
 
     - Enter **Conversations** in the **Label** field.
     - Choose the **Globe** icon to generate a translatable text key. 
@@ -331,16 +350,16 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 #### Configure columns
 
-21. Navigate to **Conversations** &rarr; **Table** &rarr; **Columns** and choose the **Plus** icon to add columns. 
+1. Navigate to **Conversations** &rarr; **Table** &rarr; **Columns** and choose the **Plus** icon to add columns. 
 
-22. Choose **Add Basic Columns**. A popup appears.
+2. Choose **Add Basic Columns**. A popup appears.
 
-23. In the **Add Basic Columns** popup:
+3. In the **Add Basic Columns** popup:
 
     - In the **Columns** dropdown menu, select **author**, **message**, and **timestamp**. 
     - Choose **Add**.
 
-5. For each of the **author**, **message**, and **timestamp** columns:
+4. For each of the **author**, **message**, and **timestamp** columns:
 
     - In the **Label** field, change the value to **Author**, **Message**, and **Conversation Date**, respectively.
     - Press <kbd>Enter</kbd> to confirm the change.
@@ -348,11 +367,11 @@ In this section, you'll modify the Incident Object Page of the UI with the SAP F
 
 #### Configure table and check the result
 
-22. For **Table**, in the **Type** dropdown menu, select **ResponsiveTable** to make the table responsive.
+1. For **Table**, in the **Type** dropdown menu, select **ResponsiveTable** to make the table responsive.
 
-23. In the **Creation Mode: Name** dropdown menu, select **Inline**.
+2. In the **Creation Mode: Name** dropdown menu, select **Inline**.
 
-24. The complete list object page looks like this:
+3. The complete list object page looks like this:
 
     ![Complete List Object Page](./images/obj11.png)
 
