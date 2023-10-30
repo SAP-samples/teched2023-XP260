@@ -157,7 +157,7 @@ Navigation targets are required to navigate between applications, but also to st
       >>Use your teched user number for `xxx`. Eg., If your teched user name is XP260-001, use 001 as the `xxx`.
       ![screenshot missing](./images/flp1.png)
 
->Make `incidents-046` to `incidents046` inside the crossNavigation to expose the html5 applciation to content explorer -- to revisit
+3. Make `incidents-046` to `incidents046` inside the crossNavigation to expose the html5 applciation to content explorer.
 This navigation configuration adds the following section in `app/incidents/webapp/manifest.json`:
 
 ```json[10-23]
@@ -184,6 +184,7 @@ This navigation configuration adds the following section in `app/incidents/webap
         }
       }
     }
+  }
   ...
 ```
 
