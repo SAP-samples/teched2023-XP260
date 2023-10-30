@@ -35,5 +35,5 @@ In this exercise, we will create a development space in SAP Business Application
 
 You've now created a development space in SAP Business Application Studio.
 
-Continue to - [Exercise 2 - Build a CAP application](../ex2/README.md)
+Continue to - [Exercise 2 - Build a CAP application](../Build%20a%20CAP%20Application/README.md)
 

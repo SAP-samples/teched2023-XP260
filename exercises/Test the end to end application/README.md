@@ -12,14 +12,13 @@ In this exercise you will learn
         "model": "srv/external/API_BUSINESS_PARTNER",
         "[production]": {
           "credentials": {
-            "destination": "incidents-api-access",
-            "path": "/sap/opu/odata/sap/API_BUSINESS_PARTNER"
+            "destination": "incidents-api-access"
           }
         }
       }
 ```
 
-2. In the incidents-mgmt-srv module requires section add **- name: incidents-mgmt-xxx-destination-service**
+2. In mta.yaml file under **incidents-mgmt-srv** module requires section add **- name: incidents-mgmt-xxx-destination-service**
    
     ```yaml
     - name: incidents-mgmt-srv
@@ -47,4 +46,4 @@ In this exercise you will learn
 
    ![login](./images/select_account.png)
 
-You have to [Assign Application Roles](../ex10/README.md) to be able to access the application via the URL.
+You have to [Assign Application Roles](../User%20Role%20Assignment/README.md) to be able to access the application via the URL.

@@ -20,7 +20,7 @@ In this exercise we will learn
 
     > The **cds add hana** command adds the **@sap/cds-hana** module that allows SAP HANA Cloud to access the **package.json** file and the database configuration **"kind": "hana"** that uses SAP HANA Cloud when the application is started on production.
     >
-    > The **cds add hana** command adds to the **package.json** file the highlighted lines:
+    > The **cds add hana** command adds to the **package.json** file the highlighted lines and run **npm i** command just to make sure all new packages have been downloaded:
 
     ```json[5, 11-15]
     {
@@ -91,7 +91,7 @@ In this exercise we will learn
     >- Adds the SAP Authorization and Trust Management service to the **package.json** file of the **INCIDENT-MANAGEMENT-xxx** project.
     >- Creates the SAP Authorization and Trust Management service security configuration (that is, the **xs-security.json** file) for the **INCIDENT-MANAGEMENT-xxx** project.
 
-2. Check if the following line has been added to the **package.json** file:
+2. Check if the following line has been added to the **package.json** file and run **npm i** command just to make sure all new packages have been downloaded:
     
     ```json[5-6, 14]
     {

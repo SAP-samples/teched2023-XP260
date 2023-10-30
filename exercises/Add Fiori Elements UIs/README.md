@@ -90,6 +90,8 @@ Instead of using `cds watch` command in the terminal to start the service, you w
 
     > If you get an error **SyntaxError: Unexpected token / in JSON at position 4**, open the file **.vscode/launch.json**, delete any comments that you have there, and try again. 
 
+    ![Vscode comments](./images/vscode%20comments.png)
+
     This opens a dropdown menu at the top offering all scripts maintained in the scripts section of the `package.json` file that are based on the `cds run` and `cds watch` commands.
 
     > In case the **Application Info - incidentsxxx** tab is closed: 
@@ -183,7 +185,7 @@ The filter labels are text strings. It's a good idea to update them so they are 
 
     > The filter labels are text strings. It's a good idea to update them so they are compliant with internationalization standards (i18n).
 
-    > Learn more about how internationalization works for the backend part in [Where to Place Text Bundles?](https://cap.cloud.sap/cap/docs/guides/i18n#where-to-place-text-bundles) in the CAP documentation.
+    > Learn more about how internationalization works for the backend part in [Where to Place Text Bundles?](https://cap.cloud.sap/docs/guides/i18n#where-to-place-text-bundles) in the CAP documentation.
 
 6. For each of the **name**, **Description (urgency/descr)**, and **Description (status/descr)** columns:
 
