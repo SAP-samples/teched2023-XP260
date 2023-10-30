@@ -1,4 +1,3 @@
-**TODO: Remove hyphens and update screenshots. Also Update the code sample in the teched repo with the same**
 # Exercise 9 - Deploy in SAP BTP, Cloud Foundry Runtime
 
 In this exercise we will learn
