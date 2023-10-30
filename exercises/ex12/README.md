@@ -1,22 +1,16 @@
-# Exercise 12 - Explore APIs & events in SAP Business Accelerator Hub
+# Exercise 12 - Download EDMX for SAP S/4HANA Business Partner API
 
 In this exercise you will learn
 - How to Download the EDMX specification for the required API
 
 ## Overview
 
-The SAP Business Accelerator Hub is a web application hosted by SAP to discover, explore, and test SAP and partner APIs (application programming interfaces) that are required to build extensions or process integrations.
+The Business Partner API EDMX file is needed to integrate SAP S/4HANA API_BUSINESS_PARTNER oData into our SAP Cloud Application Programming Model. 
 
-Go through the [SAP Business Accelerator Hub](https://api.sap.com/) and check whether these APIs can help you complete your extension scenario. 
+## Download the EDMX directly from local file.
 
-For our scenario we use the Business Partner API from SAP S/4HANA Cloud.
+- To Download, click [Download EDMX for S/4HANA Business Partner API](/file/API_BUSINESS_PARTNER.edmx)
 
-## Get the Business Partner API
-
-Download the [Business Partner API (A2X) from SAP Business Accelerator Hub](https://api.sap.com/api/API_BUSINESS_PARTNER/overview). Go to section _API Resources_, select _API Specification_, and select the _EDMX_ file. You will need this file in a later section.
-
-> To Download, please login or signup with your personal user.
-   
-   ![Download API](./images/download-api.png)
+   ![Download EDMX](/file/images/edmx_download.png)
 
 
