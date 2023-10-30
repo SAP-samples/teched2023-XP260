@@ -12,8 +12,7 @@ In this exercise you will learn
         "model": "srv/external/API_BUSINESS_PARTNER",
         "[production]": {
           "credentials": {
-            "destination": "incidents-api-access",
-            "path": "/sap/opu/odata/sap/API_BUSINESS_PARTNER"
+            "destination": "incidents-api-access"
           }
         }
       }
