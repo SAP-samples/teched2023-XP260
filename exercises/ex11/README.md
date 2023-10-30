@@ -19,7 +19,7 @@ In this exercise you will learn
 
 #### Add application to Content Explorer
 
-5. Choose **Content Manager** in the menu on the left and choose the **Content Explorer** button.
+5. Choose **Content Manager** in the menu on the left and Click on **Content Explorer** button.
 
 6. Select the tile **HTML5 Apps** with your respective subdomain name.
 

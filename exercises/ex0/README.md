@@ -12,7 +12,7 @@ Instead of delving into overly-technical disciplines, CAP lets you focus on your
 
 The CAP framework features a mix of proven and broadly-adopted open-source and SAP technologies, as highlighted in the following figure.
 
-![CAP Overview](cap_overview.png)
+![CAP Overview](./images/cap_overview.png)
 
 On top of open-source technologies, CAP adds:
 

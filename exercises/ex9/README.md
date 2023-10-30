@@ -295,6 +295,8 @@ Run the following command to assemble everything into a single `mta.tar` archive
 mbt build
 ```
 
+Once build is successfull a mtar will be created inside folder mta_archives.
+
 See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/d04fc0e2ad894545aebfd7126384307c.html?locale=en-US) to learn more about MTA-based deployment.
 
 ## Deploy in the SAP BTP, Cloud Foundry runtime
@@ -305,19 +307,39 @@ See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap
 
     ```bash
     cf api <API-ENDPOINT>
-    cf login
-    cf target -o <ORG> -s <SPACE>
     ```
 
     > You can find the API endpoint in the **Overview** section of your subaccount in the SAP BTP cockpit.
 
-3. Navigate to the **mta_archives** folder and run the following command to deploy the generated archive to the SAP BTP, Cloud Foundry runtime:
+3. Run command to login into cf:
+
+    ```bash
+    cf login --sso
+    ```
+
+    you can see **Temporary Authentication Code** URL on the terminal. Copy URL and open it in new tab.
+
+    ![cf login](./images/cf%20login.png)
+
+4. You will see login page. Enter identity provider key as **tdct3ched1-platform** and click on **Sign in    with alternate identity provider**.
+
+    ![cf login page](./images/login%20page.png)
+
+5. Temporary Authentication code will be generated.
+
+    ![temporary authentication code](./images/temporary%20Authentication%20code.png)
+
+6. Copy temporary Authentication Code and paste into cf login terminal. You will see success message.
+
+    ![cf login success](./images/cf%20login%20success.png)
+
+7. Navigate to the **mta_archives** folder and run the following command to deploy the generated archive to the SAP BTP, Cloud Foundry runtime:
 
     ```bash
     cf deploy mta_archives/incident-management-046_1.0.0.mtar 
     ```
 
-4. Check if all services have been created:
+8. Check if all services have been created:
 
     ```bash 
     cf services
@@ -327,7 +349,7 @@ See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap
 
     ![Services after deploy](./images/cf-services.png)
 
-5. Check if the apps are running:
+9. Check if the apps are running:
 
     ```bash
     cf apps
@@ -335,7 +357,7 @@ See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap
 
     ![App after deploy](./images/cf-apps.png)
 
-6. Enter the route displayed for **incident-management-046-srv** in your browser.
+10. Enter the route displayed for **incident-management-046-srv** in your browser.
 
     ![Incident Management route](./images/incident-management-srv-route.png)
 
@@ -343,7 +365,7 @@ See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap
 
     ![CAP start page](./images/cap-start-page.png)
 
-4. When you choose the **Incidents** service entity, you will see an error message. 
+11. When you choose the **Incidents** service entity, you will see an error message. 
 
     ![401 error](./images/401-error.png)
 

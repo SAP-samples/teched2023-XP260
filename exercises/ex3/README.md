@@ -183,7 +183,7 @@ The filter labels are text strings. It's a good idea to update them so they are 
 
     > The filter labels are text strings. It's a good idea to update them so they are compliant with internationalization standards (i18n).
 
-    > Learn more about how internationalization works for the backend part in [Where to Place Text Bundles?](https://cap.cloud.sap/cap/docs/guides/i18n#where-to-place-text-bundles) in the CAP documentation.
+    > Learn more about how internationalization works for the backend part in [Where to Place Text Bundles?](https://cap.cloud.sap/docs/guides/i18n#where-to-place-text-bundles) in the CAP documentation.
 
 6. For each of the **name**, **Description (urgency/descr)**, and **Description (status/descr)** columns:
 
