@@ -17,7 +17,6 @@ If not click on play button to start.
 
 Below are the exercise link provided to be tried out.
 
-- [Launch SAP Business Application Studio](./exercises/Launch%20SAP%20Business%20Application%20Studio/README.md)
 - [Build a CAP Application](./exercises/Build%20a%20CAP%20Application/README.md)
 - [Add Fiori Elements UIs](./exercises/Add%20Fiori%20Elements%20UIs/README.md)
 - [Add Custom Logic](./exercises/Add%20Custom%20Logic/README.md)

@@ -321,7 +321,7 @@ See [Multitarget Applications in the Cloud Foundry Environment](https://help.sap
 
     ![cf login](./images/cf%20login.png)
 
-4. You will see login page. Enter identity provider key as **tdct3ched1-platform** and click on **Sign in    with alternate identity provider**.
+4. You will see login page. Enter origin key of your identity provider key as **tdct3ched1-platform** and click on **Sign in    with alternate identity provider**.
 
     ![cf login page](./images/login%20page.png)
 
