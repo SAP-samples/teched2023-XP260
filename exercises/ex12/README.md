@@ -23,6 +23,6 @@ Download the [Business Partner API (A2X) from SAP Business Accelerator Hub](http
 
 - To Download, click [Download EDMX for S/4HANA Business Partner API](/file/API_BUSINESS_PARTNER.edmx)
 
-
+   ![Download EDMX](/file/images/edmx_download.png)
 
 
