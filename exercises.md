@@ -8,7 +8,7 @@
 
     ![btp navigation](./exercises/images/btp_navigation.png)
 
-4. Two dev spaces have been created (dev1 and dev2). Click on the spaces as per day. Make sure dev spaces is up and running.
+4. Two dev spaces have been created (day1 and day2). Click on the spaces as per day. Make sure dev spaces is up and running.
 If not click on play button to start.
 
     ![btp navigation](./exercises/images/dev-space.png)
@@ -17,19 +17,19 @@ If not click on play button to start.
 
 Below are the exercise link provided to be tried out.
 
-- [Launch SAP Business Application Studio](./exercises/ex1/README.md)
-- [Build a CAP Application](./exercises/ex2/README.md)
-- [Add Fiori Elements UIs](./exercises/ex3/README.md)
-- [Add Custom Logic](./exercises/ex4/README.md)
-- [Use a Local Launch Page](./exercises/ex5/README.md)
-- [Add Authorization](./exercises/ex6/README.md)
-- [Add Test Cases](./exercise/ex7/README.md)
-- [Prepare for Production](./exercise/ex8/README.md)
-- [Deploy in SAP BTP, Cloud Foundry Runtime](./exercises/ex9/README.md)
-- [User Role Assignment](./exercises/ex10/README.md)
-- [Integrate Your Application with SAP Build Work Zone, Standard Edition](./exercises/ex11/README.md)
-- [Explore APIs & events in SAP API Business Hub](./exercises/ex12/README.md)
-- [Implement Remote Service Connectivity](./exercises/ex13/README.md)
-- [Local Testing of the Incident Management Application](./exercises/ex14/README.md)
-- [Deploy the application to SAP BTP Cloud Foundry Runtime](./exercises/ex15/README.md)
-- [Test the end to end flow](./exercises/ex16/README.md)
+- [Launch SAP Business Application Studio](./exercises/Launch%20SAP%20Business%20Application%20Studio/README.md)
+- [Build a CAP Application](./exercises/Build%20a%20CAP%20Application/README.md)
+- [Add Fiori Elements UIs](./exercises/Add%20Fiori%20Elements%20UIs/README.md)
+- [Add Custom Logic](./exercises/Add%20Custom%20Logic/README.md)
+- [Use a Local Launch Page](./exercises/Use%20a%20Local%20Launch%20Page/README.md)
+- [Add Authorization](./exercises/Add%20Authorization/README.md)
+- [Add Test Cases](./exercises/Add%20Test%20Cases/README.md)
+- [Prepare for Production](./exercises/Prepare%20for%Production/README.md)
+- [Deploy in SAP BTP, Cloud Foundry Runtime](./exercises/Deploy%20in%20SAP%20BTP,%20Cloud%20Foundry%20Runtime/README.md)
+- [User Role Assignment](./exercises/User%20Role%20Assignment/README.md)
+- [Integrate Your Application with SAP Build Work Zone, Standard Edition](./exercises/Integrate%20Your%20Application%20with%20SAP%20Build%20Work%20Zone,%20Standard%20Edition/README.md)
+- [Explore APIs & events in SAP API Business Hub](./exercises/Explore%20APIs%20&%20events%20in%20SAP%20API%20Business%20Hub/README.md)
+- [Implement Remote Service Connectivity](./exercises/Implement%20Remote%20Service%20Connectivity/README.md)
+- [Local Testing of the Incident Management Application](./exercises/Local%20Testing%20of%20the%20Incident%20Management%20Application/README.md)
+- [Deploy the application to SAP BTP Cloud Foundry Runtime](./exercises/Deploy%20the%20application%20to%20SAP%20BTP%20Cloud%20Foundry%20Runtime/README.md)
+- [Test the end to end flow](./exercises/Test%20the%20end%20to%20end%20flow/README.md)

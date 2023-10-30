@@ -324,4 +324,4 @@ Elements can be specified with a calculation expression, in which you can refer 
 
 You've now ...
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Excercise 3 ](../Add%20Fiori%20Elements%20UIs/README.md)
