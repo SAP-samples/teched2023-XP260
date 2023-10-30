@@ -18,7 +18,7 @@ In this exercise you will learn
       }
 ```
 
-2. In the incidents-mgmt-srv module requires section add **- name: incidents-mgmt-xxx-destination-service**
+2. In mta.yaml file under incidents-mgmt-srv module requires section add **- name: incidents-mgmt-xxx-destination-service**
    
     ```yaml
     - name: incidents-mgmt-srv
