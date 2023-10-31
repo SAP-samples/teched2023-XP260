@@ -20,7 +20,7 @@ To learn more about each of these points, see [Why Use SAP Fiori Elements?](http
 
 1. In SAP Business Application Studio, go to your **IncidentManagement** dev space.
 
-    > Make sure the **IncidentManagement** dev space is in status **RUNNING**.
+    > Make sure the **day1/day2** dev space is in status **RUNNING**.
 
 2. To invoke the Command Palette, choose the burger menu and then choose **View** &rarr; **Command Palette**.
 

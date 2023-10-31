@@ -13,4 +13,5 @@ The Business Partner API EDMX file is needed to integrate SAP S/4HANA API_BUSINE
 
    ![Download EDMX](/file/images/edmx_download.png)
 
+- Alternatively, you can [click](https://github.com/SAP-samples/btp-developer-guide-cap/blob/main/documentation/remote-service/explore-apis-and-events/README.md) to download EDMX file from Business Partner API.
 

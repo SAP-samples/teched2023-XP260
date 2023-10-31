@@ -30,7 +30,7 @@ In this exercise you will learn
       - name: incidents-mgmt-046-destination-service
     ....
     ```
->Use your teched user number for `xxx`. Eg., If your teched user name is XP260-001, use 001 as the `xxx`.
+>Use your teched user number for `xxx`. Eg, If your teched user name is XP260-001, use 001 as the `xxx`.
 
 3. Right-click the mta.yaml file and choose **Build MTA Project**
    
