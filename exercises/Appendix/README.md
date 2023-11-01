@@ -1,6 +1,6 @@
-## Steps to follow for Cloud Foundry Deployment
+## Steps To Follow for Cloud Foundry Deployment
 
-This documentation is to be followed when trying to deploy your application on Cloud Foundry through VSCode. Ensure that you have followed all the steps upto **Set Up the MTA for deployment**. You can now proceed to configuring the **Managed Approuter**.
+This documentation is to be followed when trying to deploy your application on Cloud Foundry through VSCode. Ensure you have followed all the steps up to **Set Up the MTA for deployment**. You can now proceed to configure the **Managed Approuter**.
 
 <br>
 
@@ -113,7 +113,7 @@ To fix this, open app/incidents/webapp/manifest.json and in dataSources.mainServ
     }
 
     ```
-    Again replace &lt;xxx&gt; with your teched user number.
+    Again, replace &lt;xxx&gt; with your teched user number.
  
 
     Open `app/incidents-<xxx>/webapp/i18n/i18n.properties` and add the following: 
@@ -194,7 +194,7 @@ To fix this, open app/incidents/webapp/manifest.json and in dataSources.mainServ
 
     Ensure to modify all the &lt;xxx&gt; with your teched user number.
 
-4. Now you’ll have to add some scripts to execute the deployment. Open the `package.json` file in the root folder and add the following to the scripts section: 
+4. Now, you’ll have to add some scripts to execute the deployment. Open the `package.json` file in the root folder and add the following to the scripts section: 
 
     ```json
         "scripts": { 
@@ -238,7 +238,7 @@ To fix this, open app/incidents/webapp/manifest.json and in dataSources.mainServ
     }
     ```
 
-6. You now must create a file named `ui5-deploy.yaml` inside `app/incidents-<xxx>`. To it add the following: 
+6. You, now must create a file named `ui5-deploy.yaml` inside `app/incidents-<xxx>`. To it add the following: 
 
     ```yaml
         #yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
