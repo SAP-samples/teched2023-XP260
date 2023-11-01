@@ -27,7 +27,7 @@ Below are the exercise link provided to be tried out.
 - [Deploy in SAP BTP, Cloud Foundry Runtime](./exercises/Deploy%20in%20SAP%20BTP,%20Cloud%20Foundry%20Runtime/README.md)
 - [User Role Assignment](./exercises/User%20Role%20Assignment/README.md)
 - [Integrate Your Application with SAP Build Work Zone, Standard Edition](./exercises/Integrate%20Your%20Application%20with%20SAP%20Build%20Work%20Zone,%20Standard%20Edition/README.md)
-- [Explore APIs & events in SAP API Business Hub](./exercises/Explore%20APIs%20&%20events%20in%20SAP%20API%20Business%20Hub/README.md)
+- [Download EDMX for SAP S/4HANA Business Partner API](./exercises/Download%20EDMX%20for%20SAP%20S4HANA%20Business%20Partner%20API/README.md)
 - [Implement Remote Service Connectivity](./exercises/Implement%20Remote%20Service%20Connectivity/README.md)
 - [Local Testing of the Incident Management Application](./exercises/Local%20Testing%20of%20the%20Incident%20Management%20Application/README.md)
 - [Deploy the application to SAP BTP Cloud Foundry Runtime](./exercises/Test%20the%20end%20to%20end%20application/README.md)
