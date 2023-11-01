@@ -55,14 +55,14 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Use a Local Launch Page](./exercises/Use%20a%20Local%20Launch%20Page/README.md)
 - [Add Authorization](./exercises/Add%20Authorization/README.md)
 - [Add Test Cases](./exercises/Add%20Test%20Cases/README.md)
-- [Prepare for Production](./exercises/Prepare%20for%Production/README.md)
+- [Prepare for Production](./exercises/Prepare%20for%20Production/README.md)
 - [Deploy in SAP BTP, Cloud Foundry Runtime](./exercises/Deploy%20in%20SAP%20BTP,%20Cloud%20Foundry%20Runtime/README.md)
 - [User Role Assignment](./exercises/User%20Role%20Assignment/README.md)
 - [Integrate Your Application with SAP Build Work Zone, Standard Edition](./exercises/Integrate%20Your%20Application%20with%20SAP%20Build%20Work%20Zone,%20Standard%20Edition/README.md)
 - [Download EDMX for SAP S/4HANA Business Partner API](./exercises/Download%20EDMX%20for%20SAP%20S4HANA%20Business%20Partner%20API/README.md)
 - [Implement Remote Service Connectivity](./exercises/Implement%20Remote%20Service%20Connectivity/README.md)
 - [Local Testing of the Incident Management Application](./exercises/Local%20Testing%20of%20the%20Incident%20Management%20Application/README.md)
-- [Deploy the application to SAP BTP Cloud Foundry Runtime](./exercises/Deploy%20the%20application%20to%20SAP%20BTP%20Cloud%20Foundry%20Runtime/README.md)
+- [Deploy the application to SAP BTP Cloud Foundry Runtime](./exercises/Test%20the%20end%20to%20end%20application/README.md)
 - [Test the end to end flow](./exercises/Test%20the%20end%20to%20end%20flow/README.md)
 
 **IMPORTANT**
