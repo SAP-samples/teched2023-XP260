@@ -9,9 +9,9 @@ In this exercise, we will learn
 
 ## Create a CAP project
 
-1. In SAP Business Application Studio, go to your **IncidentManagement** dev space.
+1. In SAP Business Application Studio, go to your **day1/day2** dev space.
 
-    > Make sure the **IncidentManagement** dev space is in status **RUNNING**.
+    > Make sure the **day1/day2** dev space is in status **RUNNING**.
 
 2. Choose the burger menu and choose **Terminal** &rarr; **New Terminal**.
 
